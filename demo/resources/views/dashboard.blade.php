@@ -7,7 +7,11 @@
 <body>
 <nav class="navbar navbar-light navbar-expand-lg mb-5" style="background-color: #e3f2fd;">
     <div class="container">
+<<<<<<< HEAD
         <a class="navbar-brand mr-auto" href="#">Tintuc.com</a>
+=======
+        <a class="navbar-brand mr-auto" href="#">PositronX</a>
+>>>>>>> TrungHieu
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

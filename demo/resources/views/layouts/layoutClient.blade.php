@@ -74,18 +74,39 @@
                     <div class="float--left float--xs-none text-xs-center">
                         <!-- Header Topbar Info Start -->
                         <ul class="header--topbar-info nav">
+<<<<<<< HEAD
                             <li><i class="fa fm fa-map-marker"></i>New York</li>
                             <li><i class="fa fm fa-mixcloud"></i>21<sup>0</sup> C</li>
                             <li><i class="fa fm fa-calendar"></i>Today (Sunday 19 April 2017)</li>
+=======
+                            <li><i class="fa fm fa-map-marker"></i>Viet Nam</li>
+                            <li><i class="fa fm fa-mixcloud"></i>21<sup>0</sup> C</li>
+                            <li><i class="fa fm fa-calendar"></i>Today (Sat 27 May 2023)</li>
+>>>>>>> TrungHieu
                         </ul>
                         <!-- Header Topbar Info End -->
                     </div>
 
                     <div class="float--right float--xs-none text-xs-center">
                         <!-- Header Topbar Action Start -->
+<<<<<<< HEAD
                         <ul class="header--topbar-action nav">
                             <li><a href="login.html"><i class="fa fm fa-user-o"></i>Login/Register</a></li>
                         </ul>
+=======
+                        @if (empty($_SESSION['id_user']))
+                        <ul class="header--topbar-action nav">
+                            <li><a href="/login"><i class="fa fm fa-user-o"></i>Login/Register</a></li>
+                        </ul>
+                        @endif
+
+                        @if (!empty($_SESSION['id_user']))
+                        <ul class="header--topbar-action nav">
+                            <li><a href="{{route('viewuser.id',['id'=>$_SESSION['id_user']])}}"><i class="fa fm fa-user-o"></i><?php echo $customAuth->getUserID($_SESSION['id_user'])[0]->name  ?></a></li>
+                            <li class="logout"><a href="/login">Log Out</a></li>
+                        </ul>
+                        @endif
+>>>>>>> TrungHieu
                         <!-- Header Topbar Action End -->
                        
                     </div>
@@ -110,7 +131,11 @@
                     <!-- Header Ad Start -->
                     <div class="header--ad float--right float--sm-none hidden-xs">
                         <a href="#">
+<<<<<<< HEAD
                             <img src="/img/ads-img/ad-728x90-01.jpg" alt="Advertisement">
+=======
+                            <img src="/images/banner.png" alt="Advertisement" width="230" height="90">
+>>>>>>> TrungHieu
                         </a>
                     </div>
                     <!-- Header Ad End -->
@@ -137,7 +162,11 @@
                              
                             {{-- hien thi danh sach danh muc --}}
                            @foreach ($dataCategory->getAllCategory() as $valueCatagory)
+<<<<<<< HEAD
                            <li><a href="/auth/listArticle_Category/{{$valueCatagory->id}}">{{$valueCatagory->name}}</a></li>
+=======
+                           <li><a href="/auth/listArticle_Category/{{$valueCatagory->id_categories}}">{{$valueCatagory->name}}</a></li>
+>>>>>>> TrungHieu
                          @endforeach
                         </ul>
                         <!-- Header Menu Links End -->

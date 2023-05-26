@@ -20,9 +20,13 @@
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
 				
+<<<<<<< HEAD
 				<a href="index.html" class="logo">
 					<img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
 				</a>
+=======
+				<a href="/auth/home-1" class="logo"><h1>Home</h1></a>
+>>>>>>> TrungHieu
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
@@ -48,12 +52,20 @@
 				<div class="sidebar-content">
 					<div class="user">
 						<div class="avatar-sm float-left mr-2">
+<<<<<<< HEAD
 							<img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+=======
+							<img src="/images/download.jpg" alt="..." class="avatar-img rounded-circle">
+>>>>>>> TrungHieu
 						</div>
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 								<span>
+<<<<<<< HEAD
 									Hizrian
+=======
+									Trung Hiếu
+>>>>>>> TrungHieu
 									<span class="user-level">Administrator</span>
 									<span class="caret"></span>
 								</span>
